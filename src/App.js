@@ -1,15 +1,17 @@
+// src/App.js
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import NavBar from './Components/NavBar.js';
-import ItemListContainer from './Components/ItemListContainer.js';
-import 'src/Styles/main.css';
+import NavBar from './Components/NavBar';
+import ItemListContainer from './Components/ItemListContainer';
+import ProductList from './Components/ProductList'; 
+import './styles/main.css';
 
 function App() {
   return (
-    <Router>
+    <>
       <NavBar />
-      <ItemListContainer greeting="Explora nuestra tienda" />
-    </Router>
+      <ItemListContainer greeting="¡Bienvenido a Ekun Pets!" />
+      <ProductList /> {/* Incluye el componente de la lista de productos aquí */}
+    </>
   );
 }
 
