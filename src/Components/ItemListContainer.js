@@ -1,12 +1,14 @@
-import React from 'react';
 
-const ItemListContainer = ({ greeting }) => {
+import React from 'react';
+import '../styles/ItemListContainer.css'; 
+
+function ItemListContainer({ greeting }) {
   return (
-    <div style={{ padding: '1rem', textAlign: 'center' }}>
+    <div className="item-list-container">
       <h2>{greeting}</h2>
-      {/* Aquí irá la lista de productos */}
+      {}
     </div>
   );
-};
+}
 
 export default ItemListContainer;

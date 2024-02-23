@@ -1,0 +1,27 @@
+.navbar {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    color: var(--text-color);
+    font-size: 1.5rem;
+  }
+  
+  .nav-links {
+    list-style: none;
+  }
+  
+  .nav-item {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 1rem;
+  }
+  
+  .nav-item:hover {
+    text-decoration: underline;
+  }
+  
