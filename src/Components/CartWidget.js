@@ -14,7 +14,7 @@ const CartWidget = () => {
         borderRadius: '50%',
         padding: '0.5rem',
       }}>
-        3 {/* Número hardcodeado */}
+        3 {}
       </span>
     </div>
   );
