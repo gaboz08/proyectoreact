@@ -15,7 +15,6 @@ function NavBar() {
           <li className="nav-item active">
             <Link className="nav-link" to="/">Inicio</Link>
           </li>
-          {/* Ejemplo de categorías dinámicas, asumiendo que tienes más de una */}
           <li className="nav-item">
             <Link className="nav-link" to="/category/1">Comida Natural BARF</Link>
           </li>
@@ -25,15 +24,18 @@ function NavBar() {
           <li className="nav-item">
             <Link className="nav-link" to="/category/3">Comida Natural BARF Especial</Link>
           </li>
-          {/* Puedes agregar más categorías siguiendo el mismo patrón */}
           <li className="nav-item">
             <Link className="nav-link" to="/contact">Contacto</Link>
           </li>
         </ul>
       </div>
-      <CartWidget />
+      {/* Envuelve CartWidget con Link para redirigir a la página del carrito */}
+      <Link to="/cart" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+        <CartWidget />
+      </Link>
     </nav>
   );
 }
 
 export default NavBar;
+
